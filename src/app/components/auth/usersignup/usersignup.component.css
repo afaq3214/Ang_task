@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.section-main{
+    height: 600px;
+    width:600px;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.inner-main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-column{
+
+display: flex;
+justify-content: start;
+align-items: end;
+height: 93%;
+position: absolute;
+left: 50px;
+top: 50px;
+}
+
+.signup-form{
+height: 88%;
+width: 73%;
+display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.form {
+    background-color: rgba(3, 121, 113, 0.6); /* 60% opacity only on background */
+    height: 74%;
+    width: 80%;
+    padding: 4rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form input{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color:#263238;
+   padding: 10px;   
+   margin-top: 10px; 
+}
+p{
+    font-size: 18px;
+    color: #263238;
+}
+.second-p{
+    font-size: 13px;
+    opacity: 60%;
+    padding-top: 10px;
+}
+.second-p span{
+    color: black;
+    font-weight: 500;
+}
+
+button{
+    font-family: 'Montserrat';
+    background-color: #037971;
+    /* border-radius: 8px; */
+    font-size: 15px;
+    font-weight: 500;
+    height: 53px;
+    padding: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 1px;
+    cursor: pointer;
+  }
+  .inner-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .third-column{
+position: absolute;
+right: 5px;
+top: 60px;
+  }
+  .tick-image{
+    display: flex;
+    justify-content: end;
+
+  }
+
+  @media (max-width:1200px) {
+    .section-main{
+        height: 400px;
+        width:350px;
+        font-family: 'Poppins';
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+    }
+    .form {
+        background-color: rgba(3, 121, 113, 0.6); /* 60% opacity only on background */
+        height: 74%;
+        width:89%;
+        padding: 4rem;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .signup-form{
+        height: 88%;
+        width: 75%;
+        display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+    .form input{
+        width: 100%;
+        height: 18px;
+        background-color: white;
+        color:#263238;
+       padding: 10px;   
+       margin-top: 10px; 
+    }
+    .form input{
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        color:#263238;
+       padding: 5px;   
+       margin-top: 7px;
+       font-size: 10px; 
+    }
+    button{
+        font-family: 'Montserrat';
+        background-color: #037971;
+        /* border-radius: 8px; */
+        font-size: 10px;
+        font-weight: 500;
+        height: 53px;
+        padding: 5px;
+        width: 100%;
+        color: #FFFFFF;
+        margin-top: 1px;
+      }
+      .second-p{
+        font-size: 10px;
+        opacity: 60%;
+        padding-top: 10px;
+    }
+    .second-p span{
+        color: black;
+        font-weight: 500;
+    }
+    .third-column{
+        position: absolute;
+        right: 5px;
+        top: 62px;
+          }
+          .third-column .tick-image{
+            height: 50px;
+          }
+          .third-column .character-img img{
+            height:280px ;
+            min-width: 0px;
+          }
+          .shadow img{
+            width: 100%;
+            box-shadow: none;
+          }
+          .first-column{
+
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            height: 93%;
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            }
+            .first-column img{
+                height: 108px;
+            }
+            small{
+                font-size: 8px;
+            }
+  }
+
+  small{
+    font-size: 10px;
+  }
+ 

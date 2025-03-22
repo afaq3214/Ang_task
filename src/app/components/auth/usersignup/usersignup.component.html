@@ -1,0 +1,101 @@
+<div class="section-main">
+  <div
+    class="main"
+    [ngStyle]="{
+      'background-image': 'url(assets/signup/Background.png)',
+      'background-size': 'cover',
+      'background-position': 'center',
+      'background-repeat': 'no-repeat',
+      height: '100%',
+      width: '100%'
+    }"
+  >
+    <div class="inner-main">
+      <div class="first-column">
+        <img src="assets/signup/Plant.png" alt="plant" />
+      </div>
+
+      <!-- form -->
+      <div class="signup-form">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form">
+          <p>Sign Up</p>
+
+          <input
+            type="text"
+            formControlName="firstName"
+            placeholder="First name"
+          />
+          <div
+            *ngIf="
+              signupForm.get('firstName')?.invalid &&
+              signupForm.get('firstName')?.touched
+            "
+          >
+            <small>First name is required.</small>
+          </div>
+
+          <input
+            type="text"
+            formControlName="lastName"
+            placeholder="Last name"
+          />
+          <div
+            *ngIf="
+              signupForm.get('lastName')?.invalid &&
+              signupForm.get('lastName')?.touched
+            "
+          >
+            <small>Last name is required.</small>
+          </div>
+
+          <input type="email" formControlName="email" placeholder="Email" />
+          <div
+            *ngIf="
+              signupForm.get('email')?.invalid &&
+              signupForm.get('email')?.touched
+            "
+          >
+            <small *ngIf="signupForm.get('email')?.errors?.['required']"
+              >Email is required.</small
+            >
+            <small *ngIf="signupForm.get('email')?.errors?.['email']"
+              >Invalid email format.</small
+            >
+          </div>
+
+          <input
+            type="password"
+            formControlName="password"
+            placeholder="Password"
+          />
+          <div
+            *ngIf="
+              signupForm.get('password')?.invalid &&
+              signupForm.get('password')?.touched
+            "
+          >
+            <small *ngIf="signupForm.get('password')?.errors?.['required']"
+              >Password is required.</small
+            >
+            <small *ngIf="signupForm.get('password')?.errors?.['minlength']">
+              Password must be at least 6 characters.
+            </small>
+          </div>
+
+          <p class="second-p">Already a Member? <span>Login</span></p>
+
+          <button type="submit" [disabled]="signupForm.invalid">
+            Register
+          </button>
+        </form>
+      </div>
+      <div class="third-column">
+        <div class="tick-image"><img src="assets/signup/Group.png" /></div>
+        <div class="character-img">
+          <img src="assets/signup/Character.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow"><img src="assets/signup/Shadow.png" /></div>
+</div>
